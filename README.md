@@ -69,17 +69,21 @@ Google Colab 노트북 하나(`AOG_Dashboard.ipynb`)로 배포됩니다.
 ### 2.6 연락처 `allocation_dept_contacts` / `customs_team`
 - 공항별 Allocation 부서(2단계 성공 시 연락), 통관팀(6단계·사전 대비).
 
-### 2.7 과거 이력 (신규)
+### 2.7 과거 이력 (참고자료)
 ```json
-// sourcing_history: 자재를 과거에 어디서·어느 단계에서 확보했는지 + 성공 여부
+// sourcing_history: 자재를 과거에 어디서·어느 단계·어떤 방식으로 확보했고 성공/실패했는지(=빌린 이력)
 {"date": "2026-05-12", "registration": "HL7710", "aircraft_type": "A330-300", "part_number": "IDG-A330-001",
- "airport": "FRA", "resolved_step": "3·Pooling", "source": "Lufthansa Technik (FRA)", "result": "성공", "lead_time_hours": 6}
-// defect_history: 과거 결함을 어떻게 조치했는지(리셋 / 부품 교환 등)
-{"date": "2026-02-20", "registration": "HL7702", "aircraft_type": "A330-300", "part_number": "IDG-A330-001",
- "defect": "IDG disconnect fault", "action": "리셋 후 재연결 (Reset & Reconnect)", "result": "정상 복구", "downtime_hours": 1}
+ "airport": "FRA", "resolved_step": "3·Pooling", "source": "Lufthansa Technik (FRA)",
+ "method": "대여(Loan)", "result": "성공", "lead_time_hours": 6}
+// defect_history: 과거 결함을 어떻게 조치했는지 — 조치유형·수배범위·전용공구까지
+{"date": "2026-05-12", "registration": "HL7710", "aircraft_type": "A330-300", "part_number": "IDG-A330-001",
+ "defect": "IDG low oil pressure warning", "resolution": "부품 교환", "parts_scope": "패키지(어셈블리)",
+ "tools_required": "IDG 인출 지그 JIG-IDG-01, 토크렌치", "result": "정상 복구", "downtime_hours": 6}
 ```
-- 대시보드에서 케이스를 진행하면 **해당 자재(part_number)의 과거 수배·결함 조치 이력이 자동 표시**되어,
-  "지난번엔 어디서 얼마 만에 구했는지 / 리셋으로 됐는지 부품 교환했는지"를 즉시 참고할 수 있습니다.
+- 대시보드에서 케이스를 진행하면 **해당 자재(part_number)의 과거 이력이 참고자료로 자동 표시**됩니다.
+- **수배(빌린) 이력**: 어디서·어떤 방식(`대여(Loan)`/`구매`/`Hand-carry`/`자체재고`)으로 확보했고 성공/실패했는지 — "지난번 이 자재는 어디서 빌려서 됐지?"를 즉시 확인. 상단에 과거 건수·성공 건수·최다 수배처 요약도 표시.
+- **결함 조치 이력**: `resolution`(부품 교환 / 디퍼(MEL) / 리셋·재시동 / SW 리로드), `parts_scope`(단일 부품 vs 패키지 어셈블리), `tools_required`(전용 공구)까지 — "파츠 하나만 바꾸면 되는지, 패키지로 가야 하는지, 어떤 공구가 필요한지"를 진행 중에 바로 참고. 상단에 조치 분포·전용공구 예시 요약도 표시.
+- 현재는 더미 데이터이며, 실제로는 정비 sheet/시스템 연동으로 채우는 것을 가정합니다. 두 이력 모두 "데이터 관리"에서 편집 가능합니다.
 
 ---
 
