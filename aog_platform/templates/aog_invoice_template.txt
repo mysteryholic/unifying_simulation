@@ -1,0 +1,13 @@
+AOG SPARE PART SHIPPING INVOICE / DECLARATION
+--------------------------------------------------------
+AOG Ref      : AOG-{date}-{registration}
+Aircraft     : {registration} ({aircraft_type})  |  Operator: {operator}
+Part Number  : {part_number}    Qty: 1
+Reason       : Aircraft On Ground (AOG) - urgent spare, nil commercial value
+Consignee    : {handling_agent}
+Address      : {address}
+Destination  : {airport}
+Shipper      : Korean Air Material Control, ICN
+Customs      : AOG duty exemption requested. DECLARATION REQUIRED before handover.
+--------------------------------------------------------
+** 신고 누락 시 파송 지연 - 반드시 통관 신고 완료 후 조업사 인계 **

@@ -1,0 +1,15 @@
+﻿aircraft_type,airline,contact,email
+A330-300,아시아나항공,02-2669-8000,fleet.a330@flyasiana.com
+A330-300,Cathay Pacific,+852-2747-1888,fleet.a330@cathaypacific.com
+A330-300,Thai Airways,+66-2-356-1111,fleet.a330@thaiairways.com
+B777-300ER,Cathay Pacific,+852-2747-1888,fleet.b777@cathaypacific.com
+B777-300ER,Emirates,+971-600-555555,fleet.b777@emirates.com
+B737-800,제주항공,02-2015-1000,fleet.b737@jejuair.net
+B737-800,티웨이항공,1688-8686,fleet.b737@twayair.com
+B737-800,Ryanair,+353-1-945-1212,fleet.b737@ryanair.com
+A321neo,에어부산,1666-3060,fleet.a321n@airbusan.com
+A321neo,JAL,+81-3-5460-3121,fleet.a321n@jal.com
+B787-9,ANA,+81-3-6735-1000,fleet.b787@ana.co.jp
+B787-9,United Airlines,+1-800-864-8331,fleet.b787@united.com
+A350-900,아시아나항공,02-2669-8000,fleet.a350@flyasiana.com
+A350-900,Qatar Airways,+974-4023-0000,fleet.a350@qatarairways.com.qa

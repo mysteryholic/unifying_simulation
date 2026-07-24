@@ -1,0 +1,8 @@
+﻿airport_code,department,contact,email
+ICN,자재관리팀 Allocation 파트,02-XXXX-1000,allocation.icn@airline.example
+GMP,자재관리팀 Allocation(김포),02-XXXX-1005,allocation.gmp@airline.example
+NRT,해외지점 Allocation(나리타),+81-3-XXXX-1010,allocation.nrt@airline.example
+CDG,해외지점 Allocation(파리),+33-1-XXXX-1015,allocation.cdg@airline.example
+FRA,해외지점 Allocation(프랑크푸르트),+49-69-XXXX-1030,allocation.fra@airline.example
+SIN,해외지점 Allocation(싱가포르),+65-XXXX-1025,allocation.sin@airline.example
+JFK,해외지점 Allocation(뉴욕),+1-718-XXXX-1040,allocation.jfk@airline.example

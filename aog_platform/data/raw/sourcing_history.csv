@@ -1,0 +1,9 @@
+﻿date,registration,aircraft_type,part_number,airport,source,method,lead_time_hours,result
+2026-06-25,HL7702,A330-300,OXY-GEN-A330-15,CDG,기체 탑재 FAK 키트,자체재고(FAK),1,성공
+2026-05-12,HL7710,A330-300,IDG-A330-001,FRA,Lufthansa Technik (FRA),대여(Loan),6,성공
+2026-02-20,HL7702,A330-300,IDG-A330-001,ICN,ICN 본사 통합 자재창고,자체재고(Allocation),2,성공
+2026-06-01,HL7710,A330-300,FUEL-NOZ-A330-07,BKK,ICN 자사창고→BKK 이송,이송(자사),11,성공
+2026-03-15,HL8259,B737-800,HYD-PUMP-737-11,SIN,SIA Engineering 제휴창고(SIN),제휴(Non-Pool),4,성공
+2026-01-09,HL8260,B737-800,HYD-PUMP-737-11,JFK,Delta TechOps 제휴창고(JFK),제휴(Non-Pool),3,성공
+2026-06-18,HL8081,B787-9,APU-787-01,LAX,United Airlines (LAX),대여(Loan),6,실패
+2026-06-19,HL8081,B787-9,APU-787-01,LAX,본사 ICN→LAX KE011,Hand-carry,30,성공

@@ -1,0 +1,6 @@
+﻿partner,location_airport,aircraft_type,part_number,part_name,qty
+Lufthansa Technik,FRA,A321neo,APU-321N-30,Auxiliary Power Unit,1
+HAECO,HKG,B777-300ER,WHL-MLG-777-06,Main Landing Gear Wheel,2
+AAR Corp,JFK,A321neo,AVIONICS-FMS-321N-04,Flight Management Computer,1
+ANA Base Maintenance,NRT,B787-9,CARGO-DOOR-ACT-787-03,Cargo Door Actuator,1
+SIA Engineering,SIN,A350-900,BRK-350-CARBON-29,Carbon Brake Assembly,1

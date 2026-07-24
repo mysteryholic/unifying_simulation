@@ -1,0 +1,31 @@
+# ============================================================================
+#  data_sources.yaml  —  [백엔드 담당자 영역]
+#  각 데이터셋의 원본 위치를 지정합니다. 프론트엔드 담당자는 이 파일을 건드리지 않습니다.
+#
+#  mode:
+#    local  -> data/raw/{file} 의 CSV를 사용 (오프라인/로컬 테스트)
+#    drive  -> 구글 드라이브 공유 CSV를 사용 (실서버 대용)
+#
+#  구글 드라이브 연동 방법 (mode: drive):
+#    1) 드라이브에서 각 CSV 파일을 '링크가 있는 모든 사용자 - 뷰어'로 공유
+#    2) 공유 링크 https://drive.google.com/file/d/<여기가 파일ID>/view 에서 <파일ID>를 복사
+#    3) 아래 각 데이터셋의 drive_id: "" 에 붙여넣기
+#    (백엔드가 https://drive.google.com/uc?export=download&id=<ID> 로 자동 다운로드합니다)
+# ============================================================================
+
+mode: local          # local 또는 drive
+
+datasets:
+  aircraft_registry:   { file: aircraft_registry.csv,   drive_id: "" }
+  fak_kits:            { file: fak_kits.csv,             drive_id: "" }
+  allocation_stock:    { file: allocation_stock.csv,     drive_id: "" }
+  alliance_stock:      { file: alliance_stock.csv,       drive_id: "" }
+  pooling_stock:       { file: pooling_stock.csv,        drive_id: "" }
+  pooling_partners:    { file: pooling_partners.csv,     drive_id: "" }
+  fleet_operators:     { file: fleet_operators.csv,      drive_id: "" }
+  station_airlines:    { file: station_airlines.csv,     drive_id: "" }
+  station_handlers:    { file: station_handlers.csv,     drive_id: "" }
+  allocation_contacts: { file: allocation_contacts.csv,  drive_id: "" }
+  hq_contacts:         { file: hq_contacts.csv,          drive_id: "" }
+  sourcing_history:    { file: sourcing_history.csv,     drive_id: "" }
+  defect_history:      { file: defect_history.csv,       drive_id: "" }

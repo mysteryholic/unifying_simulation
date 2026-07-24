@@ -1,0 +1,15 @@
+﻿aircraft_type,kit_name,part_number,part_name,qty
+A330-300,A330-300 표준 FAK,OXY-GEN-A330-15,Chemical Oxygen Generator,2
+A330-300,A330-300 표준 FAK,SMK-DET-A330-21,Cargo Smoke Detector,3
+A330-300,A330-300 표준 FAK,LIFE-VEST-A330-40,Passenger Life Vest,8
+B777-300ER,B777-300ER 표준 FAK,OXY-GEN-777-15,Chemical Oxygen Generator,2
+B777-300ER,B777-300ER 표준 FAK,SMK-DET-777-22,Cargo Smoke Detector,3
+B737-800,B737-800 표준 FAK,OXY-GEN-737-15,Chemical Oxygen Generator,2
+B737-800,B737-800 표준 FAK,SMK-DET-737-04,Cargo Smoke Detector,3
+B737-800,B737-800 표준 FAK,LIFE-VEST-737-42,Passenger Life Vest,8
+A321neo,A321neo 표준 FAK,OXY-GEN-321N-15,Chemical Oxygen Generator,2
+A321neo,A321neo 표준 FAK,SMK-DET-321N-43,Cargo Smoke Detector,3
+B787-9,B787-9 표준 FAK,OXY-GEN-787-15,Chemical Oxygen Generator,2
+B787-9,B787-9 표준 FAK,SMK-DET-787-44,Cargo Smoke Detector,3
+A350-900,A350-900 표준 FAK,OXY-GEN-350-19,Chemical Oxygen Generator,2
+A350-900,A350-900 표준 FAK,SMOKE-DET-350-11,Cargo Smoke Detector,2

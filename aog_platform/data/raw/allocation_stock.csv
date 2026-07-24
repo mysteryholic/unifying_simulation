@@ -1,0 +1,10 @@
+﻿airport_code,warehouse_name,aircraft_type,part_number,part_name,qty
+ICN,ICN 본사 통합 자재창고,A330-300,FUEL-NOZ-A330-07,Engine Fuel Nozzle,4
+ICN,ICN 본사 통합 자재창고,A330-300,IDG-A330-001,Integrated Drive Generator,2
+ICN,ICN 본사 통합 자재창고,B777-300ER,BRK-B777-CARBON-01,Carbon Brake Assembly,1
+ICN,ICN 본사 통합 자재창고,B737-800,STARTER-GEN-737-03,Starter Generator,2
+ICN,ICN 본사 통합 자재창고,B787-9,APU-787-01,Auxiliary Power Unit,1
+GMP,GMP 지점 자재창고,B737-800,WHL-MLG-737-25,Main Landing Gear Wheel,3
+FRA,FRA 해외지점 창고,A330-300,IDG-A330-001,Integrated Drive Generator,1
+JFK,JFK 해외지점 창고,B787-9,WHL-MLG-787-22,Main Landing Gear Wheel,2
+BKK,BKK 해외지점 창고,A330-300,BRK-A330-CARBON-12,Carbon Brake Assembly,1

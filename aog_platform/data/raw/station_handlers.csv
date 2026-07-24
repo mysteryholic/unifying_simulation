@@ -1,0 +1,11 @@
+﻿airport_code,handling_agent,address,jinair_cargo_auth
+ICN,KAS (Korean Air Service),"285, Jega-ro, Jung-gu, Incheon, Republic of Korea",Y
+GMP,KAS Gimpo,"Gimpo Int'l Airport Cargo Terminal, Seoul, Republic of Korea",Y
+NRT,ANA Cargo,"Narita International Airport, Chiba, Japan",Y
+JFK,Delta Cargo,"JFK Int'l Airport, Cargo Bldg 75, Jamaica, NY 11430, USA",N
+CDG,Air France Cargo,"Roissy CDG, Tremblay-en-France, France",N
+FRA,Fraport Cargo,"Frankfurt Airport CargoCity Sued, Germany",N
+SIN,SATS Cargo,"Singapore Changi Airport, Airfreight Terminal 1, Singapore",Y
+HKG,HACTL,"Hong Kong Int'l Airport, SuperTerminal 1, Hong Kong",Y
+BKK,BFS Cargo,"Suvarnabhumi Airport Free Zone, Thailand",Y
+LAX,Mercury Air Cargo,"Los Angeles Int'l Airport, CA 90045, USA",Y

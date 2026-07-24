@@ -1,0 +1,7 @@
+﻿date,registration,defect,resolution,parts_scope,tools_required,downtime_hours
+2026-05-12,HL7710,IDG low oil pressure warning,부품 교환,패키지(어셈블리),"IDG 인출 지그 JIG-IDG-01, 토크렌치",6
+2026-02-20,HL7702,IDG disconnect fault (intermittent),리셋/재시동,교환 없음(리셋),BITE 테스터,1
+2026-06-01,HL7710,Fuel nozzle coking,부품 교환,단일 부품,노즐 풀러 PULLER-07,3
+2026-03-15,HL8259,Hydraulic pump low pressure,부품 교환,패키지(어셈블리),"유압 실링 키트, 토크렌치",8
+2026-05-05,HL8260,Cargo smoke detector false warning,리셋/재시동,교환 없음(리셋),표준 공구,1
+2026-06-18,HL8081,APU start fault,디퍼(MEL) 후 부품 교환,패키지(어셈블리),APU 호이스트 HOIST-APU-01,30

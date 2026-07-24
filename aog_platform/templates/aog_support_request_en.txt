@@ -1,0 +1,16 @@
+SUBJECT: [AOG - URGENT] Spare part support request - {aircraft_type} / {part_number} / {airport}
+
+Dear Operations / Material Support Team,
+
+We are currently experiencing an AOG (Aircraft on Ground) situation on our {aircraft_type} aircraft at {airport}. We urgently require the following part and would greatly appreciate your support:
+
+  - Part Number: {part_number}
+  - Aircraft Type: {aircraft_type}
+  - Station: {airport}
+
+If you have this part available, please advise on loan availability and the minimum lead time at your earliest convenience.
+
+Thank you for your urgent assistance.
+
+Best regards,
+Material Control Department

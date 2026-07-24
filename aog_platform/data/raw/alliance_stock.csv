@@ -1,0 +1,5 @@
+﻿airport_code,partner,aircraft_type,part_number,part_name,qty
+CDG,Air France Industries (제휴),A330-300,FUEL-NOZ-A330-07,Engine Fuel Nozzle,1
+JFK,Delta TechOps (제휴),B737-800,HYD-PUMP-737-11,Engine-Driven Hydraulic Pump,1
+FRA,Lufthansa Technik (제휴),B777-300ER,BRK-B777-CARBON-01,Carbon Brake Assembly,1
+SIN,SIA Engineering (제휴),B737-800,HYD-PUMP-737-11,Engine-Driven Hydraulic Pump,2

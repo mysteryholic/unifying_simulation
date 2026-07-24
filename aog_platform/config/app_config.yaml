@@ -1,0 +1,94 @@
+# ============================================================================
+#  app_config.yaml  —  [프론트엔드 담당자 영역]
+#  PPT 슬라이드 짜듯이 "페이지 > 섹션" 을 선언하면 화면이 만들어집니다. 코드 수정 불필요.
+#
+#  섹션 type 종류:
+#    aog_query   : AOG 조회 입력폼 + 7단계 결과 (핵심 화면)
+#    kpi_row     : 상단 숫자 카드 여러 개.  items: [{label, dataset, agg: count|sum, column?}]
+#    table       : 표.  dataset(데이터셋명), columns(보일 컬럼, 생략시 전체), title, page_size?
+#    chart       : 막대 차트.  dataset, x(그룹 컬럼), title, agg: count(기본)
+#    markdown    : 설명 텍스트.  body: "..."
+#
+#  dataset 이름은 data_sources.yaml 의 키와 동일합니다.
+#  컬럼명은 CSV 헤더와 동일합니다.
+# ============================================================================
+
+app_title: "AOG Command Center"
+app_subtitle: "Aircraft-on-Ground Material Sourcing"
+accent: "#2563EB"          # 강조색(버튼/링크). 원하면 바꾸세요.
+
+pages:
+  - name: "AOG 조회"
+    icon: "🎯"
+    sections:
+      - type: aog_query
+
+  - name: "재고 현황"
+    icon: "📦"
+    sections:
+      - type: kpi_row
+        items:
+          - { label: "등록 기번", dataset: aircraft_registry, agg: count }
+          - { label: "로컬 창고 품목", dataset: allocation_stock, agg: count }
+          - { label: "제휴 창고 품목", dataset: alliance_stock, agg: count }
+          - { label: "Pooling 품목", dataset: pooling_stock, agg: count }
+      - type: table
+        title: "자사 로컬 창고 재고 (Allocation)"
+        dataset: allocation_stock
+        columns: [airport_code, warehouse_name, aircraft_type, part_number, part_name, qty]
+      - type: table
+        title: "제휴 창고 재고 (Non-Pool)"
+        dataset: alliance_stock
+        columns: [airport_code, partner, aircraft_type, part_number, part_name, qty]
+      - type: table
+        title: "Pooling 파트너 재고"
+        dataset: pooling_stock
+        columns: [partner, location_airport, aircraft_type, part_number, part_name, qty]
+
+  - name: "연락망"
+    icon: "📇"
+    sections:
+      - type: table
+        title: "Pooling 파트너사"
+        dataset: pooling_partners
+      - type: table
+        title: "기종별 운영 타사"
+        dataset: fleet_operators
+      - type: table
+        title: "공항별 취항 항공사"
+        dataset: station_airlines
+      - type: table
+        title: "공항/조업사 (진에어 화물인가)"
+        dataset: station_handlers
+
+  - name: "이력 인사이트"
+    icon: "📊"
+    sections:
+      - type: kpi_row
+        items:
+          - { label: "총 수배 건수", dataset: sourcing_history, agg: count }
+          - { label: "결함 조치 건수", dataset: defect_history, agg: count }
+      - type: chart
+        title: "수배 방식 분포"
+        dataset: sourcing_history
+        x: method
+      - type: chart
+        title: "결함 조치 유형 분포"
+        dataset: defect_history
+        x: resolution
+      - type: table
+        title: "과거 수배(대여) 이력"
+        dataset: sourcing_history
+      - type: table
+        title: "과거 결함 조치 이력"
+        dataset: defect_history
+
+  - name: "마스터 데이터"
+    icon: "🛩️"
+    sections:
+      - type: table
+        title: "기번 등록부"
+        dataset: aircraft_registry
+      - type: table
+        title: "FAK 키트 구성표"
+        dataset: fak_kits
